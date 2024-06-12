@@ -1,0 +1,432 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+/* ==== Template ===== */
+.left-menu {
+	width: 200px;
+	background-color: #2DA0A4;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.container .top {
+	height: 40px;
+	padding-left: 200px;
+	background-color: #18072B;
+	color: #FFF;
+	font-size: 15px;
+}
+
+.top-right {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.top-right a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.company-name {
+	height: 100px;
+	line-height: 100px;
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+}
+
+.menu-area {
+	color: #FFF;
+}
+
+.menu-area ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu-area li {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding-left: 30px;
+	background-size: 12px 12px;
+	background-repeat: no-repeat;
+	background-position: 8px 13px;
+}
+
+.menu-area li:nth-child(1) {
+	background-image: url('../img/home.png');
+}
+
+.menu-area li:nth-child(2) {
+	background-image: url('../img/key.png');
+}
+
+.menu-area li:nth-child(3) {
+	background-image: url('../img/users.png');
+}
+
+.menu-area li:nth-child(4) {
+	background-image: url('../img/clients.png'); 
+}
+
+.menu-area li:nth-child(5) {
+	background-image: url('../img/inventory.png'); 
+}
+
+.menu-area li:nth-child(6) {
+	background-image: url('../img/sales2.png'); 
+}
+
+.menu-area li:nth-child(7) {
+	background-image: url('../img/purchases2.png'); 
+}
+
+.menu-area li:nth-child(8) {
+	background-image: url('../img/resellers.png'); 
+}
+
+.menu-area li:nth-child(9) {
+	background-image: url('../img/reports.png'); 
+}
+
+.menu-area li:hover {
+	background-color: #000;
+}
+
+.menu-area li a {
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+
+.container {
+	padding-left: 200px;
+}
+
+.area-main {
+	padding: 15px;
+}
+
+.tab-area {
+	height: 40px;
+}
+
+.tab-item {
+	float: left;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+	background-color: #EEE;
+	cursor: pointer;
+}
+
+.active-tab {
+	border-bottom: 1px solid #FFF;
+	background-color: #FFF
+}
+
+.tab-body {
+	display: none;
+	padding-top: 20px;
+}
+
+/* === DEFAULT === */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+select,
+textarea {
+	width: 98%;
+	height: 30px;
+	font-size: 13px;
+	outline: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+
+textarea {
+	height: 50px;
+	border: 1px solid #CCC;
+}
+
+input[type=submit], button, .button {
+	border: 0;
+	background-color: #224074;
+	color: #FFF;
+	height: 40px;
+	border-radius: 3px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 13px;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 40px;
+}
+
+.button-small {
+	height: 30px;
+	line-height: 30px;
+}
+
+.button a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+table {
+	margin-top: 10px;
+}
+
+table th {
+	height: 40px;
+	line-height: 40px;
+	background-color: #DDD;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table td {
+	height: 40px;
+	line-height: 40px;
+	background-color: #EEE;
+	text-align: left;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* ===== Home ===== */
+.permissions-item {
+	height: 30px;
+	line-height: 30px;
+}
+
+/* ====== Users ========*/
+.warn {
+	padding: 15px;
+	background-color: #FFA07A;
+	border: 2px solid #CCC;
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* ====== Clients ======= */
+.pagination {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.page_item {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	border: 1px solid #000;
+	margin-right: 3px;
+	text-align: center;
+}
+
+.page_item a {
+	color: #000;
+	text-decoration: none;
+}
+
+.page_active {
+	background-color: #224074;
+}
+
+.page_active a {
+	color: #FFF;
+}
+
+#search {
+	width: 100px;
+	float: right;
+	background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-position: 5px;
+	padding-left: 25px;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+}
+
+.searchResults {
+	width: auto;
+	min-height: 54px;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	border: 1px solid #CCC;
+}
+
+.si {
+	height: 20px;
+	line-height: 20px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.si:hover {
+	background-color: #EEE;
+}
+
+.si a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+}
+
+/* ====== SALES ======== */
+#search_name {
+	width: 250px;
+	float: left;
+}
+
+.client_add_button {
+	font-size: 17px;
+	height: 36px;
+	line-height: 35px;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+.prod_q {
+	width: 40px !important;
+}
+
+.td-quant {
+	text-align: center;
+}
+
+/* === Home === */
+.dashboard-row {
+	clear: both;
+}
+
+.dashboard-grid-1 {
+	width: 33%;
+	height: 100px;
+	float: left;
+}
+
+.row1 .dashboard-grid-1:nth-child(1) .dashboard-grid-area {
+	margin-left: 0;
+}
+
+.row1 .dashboard-grid-1:nth-child(3) .dashboard-grid-area {
+	margin-right: 0;
+}
+
+.dashboard-grid-2 {
+	width: 66%;
+	float: left;
+}
+
+.row2 .dashboard-grid-2  .dashboard-info {
+	margin-left: 0;
+}
+
+.row2 .dashboard-grid-1 .dashboard-info {
+	margin-right: 0;
+}
+
+.dashboard-grid-3 {
+	width: 100%;
+	float: left;
+}
+
+.dashboard-grid-area {
+	background-color: #CCC;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 100px;
+	padding-left: 20px;
+}
+
+.dashboard-grid-area-count {
+	font-size: 28px;
+	padding-top: 18px;
+}
+
+.dashboard-grid-area-legend {
+	font-size: 18px;
+}
+
+.dashboard-info {
+	margin: 20px 10px 0 10px;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+.dashboard-info-title {
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	padding-left: 10px;
+	border-bottom: 1px solid #CCC;
+}
+
+.dashboard-info-body {
+	padding: 10px;
+}
+
+/* === Reports === */
+.report-item {
+	width: 150px;
+	height: 140px;
+	background-color: #FFF;
+	float: left;
+	margin: 20px;
+	padding: 20px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-size: 15px;
+	border: 2px solid #CCC;
+}
+
+.report-item {
+	font-size: 14px;
+}
+
+.report-grid {
+	width: 25%;
+	height: 150px;
+	float: left;
+	text-align: center;
+}
+
+.report-container {
+	display: flex;
+}
+
+.report-container a {
+	flex: 1;
+	text-decoration: none;
+	color: #000;
+}
+
+.report-grid {
+	flex: 1;
+	padding: 15px;
+}
